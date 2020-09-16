@@ -1,0 +1,48 @@
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Home Controler</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <script type="text/javascript" language="javascript">
+    function homeControl(cmd)
+    {
+      var xhttp = new XMLHttpRequest();
+      xhttp.open("GET", "http://server.home-net:1880/red/SmartHome?id="+cmd, true);
+      xhttp.send();
+    }
+  </script>
+  <div class="main">
+    <h1>Living room</h1>
+      <div class="button" onclick="homeControl('83')">
+        <div class="icon">
+          <img src="tv_on.png">
+        </div>
+        <div class="title">
+          テレビ On
+        </div>
+      </div>
+      
+      <div class="button" onclick="homeControl('83')">
+        <div class="icon">
+          <img src="light_off.png">
+        </div>
+        <div class="title">
+          ライト Off
+        </div>
+      </div>
+      
+      <div class="button" onclick="homeControl('83')">
+        <div class="icon">
+          <img src="light_on.png">
+        </div>
+        <div class="title">
+          ライト Off
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</body>
+</html>
