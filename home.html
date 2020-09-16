@@ -9,27 +9,21 @@
     function homeControl(cmd)
     {
       var xhttp = new XMLHttpRequest();
-      xhttp.open("GET", "http://server.home-net:1880/red/SmartHome?id="+cmd, true);
+      xhttp.open("GET", "https://maker.ifttt.com/trigger/"+cmd+"/with/key/dPAlVFM_52XJhx23FF6C12Ln4ZRnPGJ9hpbtTPvZUIE", true);
       xhttp.send();
     }
   </script>
   <div class="main">
     <h1>Living room</h1>
-      <div class="button" onclick="homeControl('83')">
-        <div class="icon">
-          <img src="tv_on.png">
-        </div>
-        <div class="title">
-          テレビ On
-        </div>
-      </div>
+       
+  <!--1行目 -->
       
       <div class="button" onclick="homeControl('83')">
         <div class="icon">
-          <img src="light_off.png">
+          <img src="light_on.png">
         </div>
         <div class="title">
-          ライト Off
+          ﾍﾟﾝﾀﾞﾝﾄ On
         </div>
       </div>
       
@@ -38,10 +32,135 @@
           <img src="light_on.png">
         </div>
         <div class="title">
-          ライト Off
+         ｼｰﾘﾝｸﾞ On
         </div>
       </div>
       
+      <div class="button" onclick="homeControl('')">
+        <div class="icon">
+          <img src="ac_on.png">
+        </div>
+        <div class="title">
+          A/C On
+        </div>
+      </div>
+      
+      <div class="button" onclick="homeControl('')">
+        <div class="icon">
+          <img src=" .png">
+        </div>
+        <div class="title">
+          ---
+        </div>
+      </div>
+  <br>
+  <!--2行目 -->
+      <div class="button" onclick="homeControl('')">
+        <div class="icon">
+          <img src="light_off.png">
+        </div>
+        <div class="title">
+          ﾍﾟﾝﾀﾞﾝﾄ Off
+        </div>
+      </div>
+      
+      <div class="button" onclick="homeControl('')">
+        <div class="icon">
+          <img src="light_off.png">
+        </div>
+        <div class="title">
+          ｼｰﾘﾝｸﾞ Off
+        </div>
+      </div>
+      
+      <div class="button" onclick="homeControl('')">
+        <div class="icon">
+          <img src="ac_off.png">
+        </div>
+        <div class="title">
+          A/C Off
+        </div>
+      </div>
+      
+      <div class="button" onclick="homeControl('')">
+        <div class="icon">
+          <img src=" .png">
+        </div>
+        <div class="title">
+          ---
+        </div>
+      </div>
+      
+  <br>
+  <!--3行目 -->
+      <h1>TV Control</h1>
+     
+      <div class="button" onclick="homeControl('')">
+        <div class="icon">
+          <img src="tv_on_off.png">
+        </div>
+        <div class="title">
+          TV On/Off
+        </div>
+      </div>
+      
+      <div class="button" onclick="homeControl('')">
+        <div class="icon">
+          <img src="pj_on_off.png">
+        </div>
+        <div class="title">
+          PJ On/Off
+        </div>
+      </div>
+  <br>
+  <!--4行目 -->
+      <h1>Bedroom</h1>
+      
+      <div class="button" onclick="homeControl('lighton(sleep)')">
+        <div class="icon">
+          <img src="light_on.png">
+        </div>
+        <div class="title">
+          ライト On
+        </div>
+      </div>
+      
+      <div class="button" onclick="homeControl('air_on')">
+        <div class="icon">
+          <img src="ac_on.png">
+        </div>
+        <div class="title">
+          A/C On
+        </div>
+      </div>
+
+
+
+
+
+
+  <br>
+  <!--5行目 -->
+      <div class="button" onclick="homeControl('lightoff(sleep)')">
+        <div class="icon">
+          <img src="light_off.png">
+        </div>
+        <div class="title">
+          ライト Off
+        </div>
+      </div>
+
+      <div class="button" onclick="homeControl('air_off')">
+        <div class="icon">
+          <img src="ac_off.png">
+        </div>
+        <div class="title">
+          A/C Off
+        </div>
+      </div>
+
+
+
     </div>
   </div>
 </body>
