@@ -1,0 +1,41 @@
+body {
+  background-image: url("back.jpg");
+  background-size: cover;
+}
+.main{
+  padding: 0px 10px 10px 10px;
+}
+h1{
+  font: 20px/1.9 'Noto Sans JP', Arial, Verdana, 游ゴシック, YuGothic,'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', メイリオ, Meiryo,sans-serif;
+  font-weight: 800;
+  color: #ffffff;
+  border-bottom: 3px solid #ffffff;
+}
+.button{
+  width: 120px;
+  height: 120px;
+  margin: 0px 0px 10px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  background: rgba(102,102,102,0.6);
+  box-shadow: 2px 2px 2px rgba(255,255,255,0.4);
+  font: 18px/1.9 'Noto Sans JP', Arial, Verdana, 游ゴシック, YuGothic,'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', メイリオ, Meiryo,sans-serif;
+  font-weight: 800;
+  color: #ffffff;
+}
+.button:active{
+  background: rgba(240,240,240,0.8);
+  box-shadow: 2px 2px 2px rgba(102,102,102,0.4) inset;
+  color: rgba(102,102,102);
+}
+.icon{
+  width: 120px;
+  height: 80px;
+  display:table-cell;
+  text-align:center;
+  vertical-align:middle;
+}
+.title{
+  text-align: center;
+  vertical-align: middle;
+}
