@@ -39,3 +39,29 @@ h1{
   text-align: center;
   vertical-align: middle;
 }
+
+
+.linkbutton{
+  width: 530px;
+  height: 140px;
+  margin: 0px 0px 10px 10px;
+  border-radius: 2px;
+  display: inline-block;
+  background: rgba(102,102,102,0.8);
+  box-shadow: 2px 2px 2px rgba(255,255,255,0.4);
+  font: 18px/1.9 'Noto Sans JP', Arial, Verdana, 游ゴシック, YuGothic,'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', メイリオ, Meiryo,sans-serif;
+  font-weight: 800;
+  color: #ffffff;
+}
+.linkbutton:active{
+  background: rgba(240,240,240,0.8);
+  box-shadow: 2px 2px 2px rgba(102,102,102,0.4) inset;
+  color: rgba(102,102,102);
+}
+.linkicon{
+  width: 500px;
+  height: 80px;
+  display:table-cell;
+  text-align:center;
+  vertical-align:middle;
+}
