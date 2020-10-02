@@ -1,0 +1,178 @@
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Home Controler</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <script type="text/javascript" language="javascript">
+    function homeControl(cmd)
+    {
+      var xhttp = new XMLHttpRequest();
+      xhttp.open("GET", "https://maker.ifttt.com/trigger/"+cmd+"/with/key/dPAlVFM_52XJhx23FF6C12Ln4ZRnPGJ9hpbtTPvZUIE", true);
+      xhttp.send();
+    }
+
+      // 同一画面でリンクを開く
+    function openURL(url) { location.href = url; }
+  </script>
+        
+  <div class="main">
+    <h1>Living room</h1>
+       
+  <!--1行目 -->
+      
+      <div class="button" onclick="homeControl('seelingon')">
+        <div class="icon">
+          <img src="light_on.png">
+        </div>
+        <div class="title">
+          ﾍﾟﾝﾀﾞﾝﾄ On
+        </div>
+      </div>
+      
+      <div class="button" onclick="homeControl('lighton')">
+        <div class="icon">
+          <img src="light_on.png">
+        </div>
+        <div class="title">
+         ｼｰﾘﾝｸﾞ On
+        </div>
+      </div>
+      
+      <div class="button" onclick="homeControl('livingair_on')">
+        <div class="icon">
+          <img src="ac_on.png">
+        </div>
+        <div class="title">
+          A/C On
+        </div>
+      </div>
+      
+      
+      <div class="button" onclick="homeControl('')">
+        <div class="icon">
+          <img src="curtain_on.png">
+        </div>
+        <div class="title">
+          Open
+        </div>
+      </div>
+          
+      <div class="button" onclick="homeControl('tv_on_off')">
+        <div class="icon">
+          <img src="tv_on_off.png">
+        </div>
+        <div class="title">
+          TV On/Off
+        </div>
+      </div>
+      
+     
+  <br>
+    <!--2行目 -->
+      <div class="button" onclick="homeControl('seelingoff')">
+        <div class="icon">
+          <img src="light_off.png">
+        </div>
+        <div class="title">
+          ﾍﾟﾝﾀﾞﾝﾄ Off
+        </div>
+      </div>
+      
+      <div class="button" onclick="homeControl('lightoff')">
+        <div class="icon">
+          <img src="light_off.png">
+        </div>
+        <div class="title">
+          ｼｰﾘﾝｸﾞ Off
+        </div>
+      </div>
+      
+      <div class="button" onclick="homeControl('livingair_off')">
+        <div class="icon">
+          <img src="ac_off.png">
+        </div>
+        <div class="title">
+          A/C Off
+        </div>
+      </div>
+      
+      
+      <div class="button" onclick="homeControl('')">
+        <div class="icon">
+          <img src="curtain_off.png">
+        </div>
+        <div class="title">
+          Close
+        </div>
+      </div>
+      <div class="linkremocon" onclick="openURL('remocon.html')">
+        <div class="linkicon_remo">
+          <a href="javascript:void('0');" ><img src="remocon.png"></a>
+        </div>
+        <div class="title">
+         Remocon
+        </div>
+      </div>
+  <br>
+  <!--3行目 -->
+      <h1>SANGO kindergarten</h1>
+      <div class="linkbutton" onclick="openURL('sango.html')">
+        <div class="linkicon">
+          <a href="javascript:void('0');" ><img src="sango.png"></a>
+        </div>
+        <div class="title">
+          幼稚園情報(リンク）
+        </div>
+      </div>
+  <br>  
+  
+  <!--4行目 -->
+      <h1>Bedroom</h1>
+      
+      <div class="button" onclick="homeControl('lighton(sleep)')">
+        <div class="icon">
+          <img src="light_on.png">
+        </div>
+        <div class="title">
+          ライト On
+        </div>
+      </div>
+      
+      <div class="button" onclick="homeControl('air_on')">
+        <div class="icon">
+          <img src="ac_on.png">
+        </div>
+        <div class="title">
+          A/C On
+        </div>
+      </div>
+
+
+  <br>
+  <!--5行目 -->
+      <div class="button" onclick="homeControl('lightoff(sleep)')">
+        <div class="icon">
+          <img src="light_off.png">
+        </div>
+        <div class="title">
+          ライト Off
+        </div>
+      </div>
+
+      <div class="button" onclick="homeControl('air_of')">
+        <div class="icon">
+          <img src="ac_off.png">
+        </div>
+        <div class="title">
+          A/C Off
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+</body>
+</html>

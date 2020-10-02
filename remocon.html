@@ -1,0 +1,113 @@
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Home Controler</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <script type="text/javascript" language="javascript">
+    function homeControl(cmd)
+    {
+      var xhttp = new XMLHttpRequest();
+      xhttp.open("GET", "https://maker.ifttt.com/trigger/"+cmd+"/with/key/dPAlVFM_52XJhx23FF6C12Ln4ZRnPGJ9hpbtTPvZUIE", true);
+      xhttp.send();
+    }
+
+      // 同一画面でリンクを開く
+    function openURL(url) { location.href = url; }
+  </script>
+        
+  <div class="main">
+    <h1>TV Remocon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <div class="link2button" onclick="openURL('living.html')">
+     <div class="link2icon">
+      <a href="javascript:void('0');" ></a>
+       </div>
+       <div class="title">
+         スマートホームへ戻る
+       </div>
+     </div>   
+     </h1>
+       
+  <!--1行目 -->
+     
+      <div class="remocon" onclick="homeControl('1ch')">
+        <div class="remocontitle">
+          ch<br>1
+        </div>
+      </div>
+      
+      <div class="remocon" onclick="homeControl('2ch')">
+      <div class="remocontitle">
+          ch<br>2
+        </div>
+      </div>
+      
+      <div class="remocon" onclick="homeControl('3ch')">
+       <div class="remocontitle">
+          ch<br>3
+        </div>
+      </div>
+      
+           
+  <br>
+      <div class="remocon" onclick="homeControl('4ch')">
+        <div class="remocontitle">
+          ch<br>4
+        </div>
+      </div>
+       
+      <div class="remocon" onclick="homeControl('5ch')">
+      <div class="remocontitle">
+          ch<br>5
+        </div>
+      </div>
+            
+      <div class="remocon" onclick="homeControl('6ch')">
+      <div class="remocontitle">
+          ch<br>6
+        </div>
+      </div>
+      
+           
+  <br>
+      <div class="remocon" onclick="homeControl('7ch')">
+        <div class="remocontitle">
+          ch<br>7
+        </div>
+      </div>
+       
+      <div class="remocon" onclick="homeControl('8ch')">
+      <div class="remocontitle">
+          ch<br>8
+        </div>
+      </div>
+            
+      <div class="remocon" onclick="homeControl('9ch')">
+      <div class="remocontitle">
+          ch<br>9
+        </div>
+      </div>
+      
+  <br>
+      <div class="remocon" onclick="homeControl('10ch')">
+        <div class="remocontitle">
+          ch<br>10
+        </div>
+      </div>
+       
+      <div class="remocon" onclick="homeControl('11ch')">
+      <div class="remocontitle">
+          ch<br>11
+        </div>
+      </div>
+            
+      <div class="remocon" onclick="homeControl('12ch')">
+      <div class="remocontitle">
+          ch<br>12
+        </div>
+      </div>
+
+  </div>
+</body>
+</html>
