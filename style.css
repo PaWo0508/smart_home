@@ -1,3 +1,5 @@
+
+
 body {
   background-image: url("living4.jpg");
   background-size: cover;
@@ -8,7 +10,7 @@ body {
 h1{
   font: 20px/1.9 'Noto Sans JP', Arial, Verdana, 游ゴシック, YuGothic,'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', メイリオ, Meiryo,sans-serif;
   font-weight: 800;
-  color: #736d71;
+  color: #4D474A;
   border-bottom: 2px solid #736d71;
 }
 .button{
@@ -50,7 +52,7 @@ h1{
   background: rgba(102,102,102,0.8);
   box-shadow: 2px 2px 2px rgba(255,255,255,0.4);
   font: 18px/1.9 'Noto Sans JP', Arial, Verdana, 游ゴシック, YuGothic,'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', メイリオ, Meiryo,sans-serif;
-  font-weight: 800;
+  font-weight: 1000;
   color: #ffffff;
 }
 .linkbutton:active{
@@ -59,7 +61,7 @@ h1{
   color: rgba(102,102,102);
 }
 .linkicon{
-  width: 500px;
+  width: 600px;
   height: 80px;
   display:table-cell;
   text-align:center;
@@ -145,6 +147,31 @@ h1{
   vertical-align:middle;
 }
 .remocontitle{
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+.remocondummy{
+  width: 50px;
+  height: 20px;
+  margin: 0px 0px 10px 10px;
+  border-radius: 20px;
+  display: inline-block;
+  font: 18px/1.9 'Noto Sans JP', Arial, Verdana, 游ゴシック, YuGothic,'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', メイリオ, Meiryo,sans-serif;
+  font-weight: 800;
+
+}
+.remocondummy:active{
+}
+.remoconicondummy{
+  width: 50px;
+  height: 20px;
+  display:table-cell;
+  text-align:center;
+  vertical-align:middle;
+}
+.remocontitledummy{
   text-align: center;
   vertical-align: middle;
 }
